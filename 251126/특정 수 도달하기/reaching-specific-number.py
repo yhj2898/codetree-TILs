@@ -1,14 +1,15 @@
 nums = list(map(int,input().split()))
+n = []
 
-nums_sum=0
-nums_avg=0
-
-for n in nums:
-    while n <= 250:
-        nums_sum = sum(nums)
-        nums_avg = sum(nums)/len(nums)
+for num in nums:
+    if num <250:
+        n.append(num)
+    else:
         break
-    nums.pop()
-    nums_sum = sum(nums)
-    nums_avg = round(sum(nums)/len(nums),1)
-print(nums_sum, nums_avg)
+
+sum_val = 0
+for i in n:
+    sum_val += i
+
+mean = round(sum_val / len(n), 1)
+print(sum_val, mean)
