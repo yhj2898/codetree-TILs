@@ -1,17 +1,14 @@
 nums = list(map(int,input().split()))
 
-n = []
-idx = []
-for i in range(len(nums)):
-    if nums[i] >250:
-         idx.append(i)
+nums_sum=0
+nums_avg=0
 
-n = nums[:min(idx)]
-
-sum_val = 0
-for i in n:
-    sum_val += i
-
-mean = round(sum_val / len(n),1)
-
-print(sum_val, mean)
+for n in nums:
+    while n <= 250:
+        nums_sum = sum(nums)
+        nums_avg = sum(nums)/len(nums)
+        break
+    nums.pop()
+    nums_sum = sum(nums)
+    nums_avg = round(sum(nums)/len(nums),1)
+print(nums_sum, nums_avg)
