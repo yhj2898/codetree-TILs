@@ -5,3 +5,5 @@ age2 = int(age2)
 
 if (age1>=19 or age2>=19) and (sex1=='M' or sex2=='M'):
     print(1)
+else:
+    print(0)
