@@ -4,8 +4,8 @@ while True:
     a=int(a)
     b=int(b)
 
-    if c=='C':
-        print(a*b)
-        break
     print(a*b)
+    if c=='C':
+        break
+    
 
