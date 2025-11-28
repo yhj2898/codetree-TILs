@@ -33,54 +33,57 @@ Codetree의 Trail 커리큘럼을 기반으로,
 ---
 
 ## 📚 Codetree Trail Roadmap
-![alt text](image-3.png)
-![alt text](image-5.png)
-![alt text](image-9.png)
 ### **Trail 0 — 프로그래밍 시작**
 - 기본 문법  
 - 입력/출력  
 - 조건문  
 - 반복문  
-- 단순 시뮬레이션  
 - 배열 기초  
 
 ### **Trail 1 — 프로그래밍 기초**
 - 출력/입력 응용  
 - 1차원/2차원 배열  
+- 연산자
+- 조건문
 - 다중 반복문  
-- 단순 시뮬레이션  
+- 문자열
 
 ### **Trail 2 — 프로그래밍 연습**
 - 함수  
-- 재귀  
+- 재귀함수  
 - 정렬  
 - 시뮬레이션  
-- 완전탐색  
+- 완전탐색
+- Ad-Hoc  
 
 ### **Trail 3 — 자료구조 알고리즘**
+- 시간, 공간 복잡도
+- 배열, 연결 리스트
+- 정렬
+- 이진탐색
 - 스택 / 큐 / 덱  
-- 트리  
-- 그래프  
-- 해시  
-- DFS / BFS  
-- DP 기초  
+- 트리
+- 해싱
+- DP
+- 그래프 탐색 / 그래프 알고리즘
 
 ### **Trail 4 — 알고리즘 입문**
 - 시뮬레이션  
 - 백트래킹  
 - DFS / BFS  
-- DP I · DP II  
+- DP
 
 ### **Trail 5 — 알고리즘 기본**
 - 중급 자료구조  
-- Parametric Search  
+- Shorten time Technique
+- Parametric Search
 - Greedy  
 - Shortest Path  
 
 ### **Trail 6 — 알고리즘 실전**
 - Tree / MST  
 - 위상정렬  
-- 문자열  
+- String
 - Advanced DP  
 ---
 
