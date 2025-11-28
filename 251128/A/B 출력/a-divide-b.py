@@ -1,8 +1,9 @@
 a,b = map(int, input().split())
 
-# 정수
 print(f'{a//b}.',end='')
 
-# 소수
-for i in range(20):
-    print(a%b * 10 //b, end='')
+a %= b
+for _ in range(20):
+    a *= 10
+    print(a//b, end='')
+    a %=b
