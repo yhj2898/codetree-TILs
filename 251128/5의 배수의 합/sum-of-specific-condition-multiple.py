@@ -2,7 +2,7 @@ a,b = map(int, input().split())
 
 total = 0
 
-if a<b:
+if b<a:
     a,b = b,a
 
 for i in range(a,b+1):
