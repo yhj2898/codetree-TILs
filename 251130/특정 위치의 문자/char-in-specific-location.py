@@ -4,3 +4,5 @@ n=input()
 
 if n in str:
     print(str.index(n))
+else:
+    print('None')
