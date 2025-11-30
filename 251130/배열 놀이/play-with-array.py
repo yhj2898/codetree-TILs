@@ -6,6 +6,6 @@ for i in range(q):
     if x[0] == 1:
         print(arr[x[1]-1])
     elif x[0] == 2:
-        print(arr.index(x[1])+1 if True else 0)
+        print(arr.index(x[1])+1 if x[1] in arr else 0)
     elif x[0] ==3:
         print(' '.join(map(str,arr[x[1]-1:x[2]])))
