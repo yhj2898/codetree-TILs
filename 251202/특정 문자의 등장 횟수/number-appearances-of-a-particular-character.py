@@ -1,14 +1,10 @@
 s = input()
 
-cnt=0
+cnt1=0
+cnt2=0
 for i in range(len(s)):
     if s[i:i+2] == 'ee':
-        cnt+=1
-print(cnt, end=' ')
-
-
-cnt=0
-for i in range(len(s)):
+        cnt1+=1
     if s[i:i+2] == 'eb':
-        cnt+=1
-print(cnt)
+        cnt2+=1
+print(cnt1, cnt2)
