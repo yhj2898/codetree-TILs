@@ -8,9 +8,9 @@ class Student:
 students=[]
 for i in range(n):
     h, w = map(int,input().split())
-    students.append(Student(h,w,_))
+    students.append(Student(h,w,i+1))
 
 students.sort(key=lambda x: (-x.h, -x.w, x.no))
 
 for i in students:
-    print(i.h, i.w, i.no+1)
+    print(i.h, i.w, i.no)
