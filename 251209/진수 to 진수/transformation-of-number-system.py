@@ -3,8 +3,7 @@ n = list(map(int, input()))
 
 # Please write your code here.
 num=0
-
-for i in n:
+for i in range(len(n)):
     num = num*a + n[i]
 
 digits=[]
