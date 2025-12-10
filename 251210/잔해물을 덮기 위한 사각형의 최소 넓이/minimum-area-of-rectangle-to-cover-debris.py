@@ -10,16 +10,18 @@ for i, (x1, y1, x2, y2) in enumerate(recs, start=1):
         for y in range(y1, y2):
             c[x][y] = i
 
-xs=[]
-ys=[]
+min_x, min_y = 9999,9999
+max_x, max_y = -9999, -9999
 
 for x in range(len(c)):
     for y in range(len(c)):
         if c[x][y]==1:
-            xs.append(x)
-            ys.append(y)
-if len(xs) == 0:
+            if x<min_x: min_x = x
+            if x>max_x: max_x = x
+            if y<min_y: min_y = y
+            if y>max_y: max_y = y
+
+if min_x == 9999:
     print(0)
 else:
-    print((max(xs)-min(xs)+1) * (max(ys)-min(ys)+1))
-
+    print((max_x-min_x+1) * (max_y-min_y+1))
