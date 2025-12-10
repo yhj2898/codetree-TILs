@@ -12,10 +12,14 @@ for i, (x1, y1, x2, y2) in enumerate(recs, start=1):
 
 xs=[]
 ys=[]
+
 for x in range(len(c)):
     for y in range(len(c)):
         if c[x][y]==1:
             xs.append(x)
             ys.append(y)
-print((max(xs)-min(xs)+1) * (max(ys)-min(ys)+1))
+if len(xs) == 0:
+    print(0)
+else:
+    print((max(xs)-min(xs)+1) * (max(ys)-min(ys)+1))
 
