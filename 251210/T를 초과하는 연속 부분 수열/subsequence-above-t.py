@@ -12,7 +12,4 @@ for i in range(n):
         cnt=0
     ans=max(ans,cnt)
 
-if ans==1:
-    print(0)
-else:
-    print(ans)
+print(ans)
