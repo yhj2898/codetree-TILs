@@ -18,7 +18,7 @@ def no_carry(a,b,c):
         j-=1
         k-=1
     return True
-ans=0
+ans=-1
 for i in range(n):
     for j in range(i+1,n):
         for k in range(j+1,n):
