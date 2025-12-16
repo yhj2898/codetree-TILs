@@ -13,7 +13,7 @@ for i in range(n):
     else:
         answer[x[i]]=2
 max_score = 0
-for i in range(1,10000-k+2):
+for i in range(1,10000-k+1):
     score=0
     for j in range(i,i+k+1):
         score+=answer[j]
