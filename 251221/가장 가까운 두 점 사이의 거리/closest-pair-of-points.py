@@ -11,5 +11,5 @@ for i,(x1,y1) in enumerate(points):
         if i==j:
             continue
         dist = (x1-x2)**2 + (y1-y2)**2
-    ans = min(ans, dist)
+        ans = min(ans, dist)
 print(ans)
