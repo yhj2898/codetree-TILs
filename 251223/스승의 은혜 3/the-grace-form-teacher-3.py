@@ -2,14 +2,21 @@ n, b = map(int, input().split())
 gifts = [tuple(map(int, input().split())) for _ in range(n)]
 ans=0
 for i in range(n):
-    buget=gifts[i][0]//2 + gifts[i][1]
-    cnt=0
+    costs = []
+
     for j in range(n):
         if i==j:
-            continue
-        if buget>b:
+            costs.append(gifts[j][0]//2+gifts[j][1])
+        else:
+            costs.append(gifts[j][0]+gifts[j][1])
+    costs.sort()
+
+    total = 0
+    cnt=0
+    for c in costs:
+        if total + c > b:
             break
-        buget += gifts[j][0] + gifts[j][1]
+        total+=c
         cnt+=1
-    ans = max(ans, cnt)
+    ans = max(ans,cnt)
 print(ans)
