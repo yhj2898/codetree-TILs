@@ -12,9 +12,10 @@ for start in [1,2,3]:
     for i in range(n):
         a,b,c = moves[i]
         if pos==a:
-            pos==b
+            pos=b
         elif pos==b:
-            pos==a
+            pos=a
         if pos==c:
             score+=1
     ans = max(ans, score)
+print(ans)
